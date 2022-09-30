@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvSourceName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="NDTV News"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:textSize="@dimen/_8sdp"
+        android:text="2022-09-30T03:30:11Z"
+        app:layout_constraintStart_toStartOf="@+id/tvSourceName"
+        app:layout_constraintTop_toBottomOf="@+id/tvSourceName"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:fontFamily="@font/montserrat_italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/ivNewsBanner"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate"
+        android:layout_marginTop="@dimen/_2sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="fitXY"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:textSize="@dimen/_13sdp"
+        android:text="Watch: Irfan Pathan Puts On A Show, Hits Four Sixes vs Australia Legends As India Legends Reach Fina.. - NDTV Sports"
+        app:layout_constraintTop_toBottomOf="@+id/ivNewsBanner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:textSize="@dimen/_12sdp"
+        android:text="Watch: Irfan Pathan Puts On A Show, Hits Four Sixes vs Australia Legends As India Legends Reach Fina.. - NDTV Sports"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/_C5C5C5"
+        android:alpha="0.5"
+        android:layout_height="1dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
